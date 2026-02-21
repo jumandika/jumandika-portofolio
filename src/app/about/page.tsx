@@ -84,7 +84,9 @@ export default function About() {
             top="64"
             fitHeight
             position="sticky"
+            // @ts-ignore
             s={{ position: "relative", style: { top: "auto" } }}
+            // @ts-ignore
             xs={{ style: { top: "auto" } }}
             minWidth="160"
             paddingX="l"

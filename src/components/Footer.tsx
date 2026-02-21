@@ -18,6 +18,7 @@ export const Footer = () => {
         s={{
           direction: "column",
           horizontal: "center",
+          // @ts-ignore
           align: "center",
         }}
       >
