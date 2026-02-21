@@ -2,14 +2,14 @@ import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
-  avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
+  firstName: "Achmad",
+  lastName: "Jumandika",
+  name: `Achmad Jumandika`,
+  role: "Sr. Mobile Engineer",
+  avatar: "/images/jumandika.png",
+  email: "dika1453@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  languages: ["English", "Indonesia"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter: Newsletter = {
@@ -25,25 +25,25 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/jumandika",
     essential: true,
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/achmad-jumandika-5551b9127",
     essential: true,
   },
   {
     name: "Instagram",
     icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
+    link: "https://www.instagram.com/jumandikaalanshori/",
     essential: false,
   },
   {
     name: "Threads",
     icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.threads.com/@jumandikaalanshori?xmt=AQF0oixwPWsKd1B98lrM52MXFNIRMvq0sXNCR_veP-CAvuw",
     essential: true,
   },
   {
@@ -59,16 +59,16 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `Portfolio mobile app showcasing my work as a ${person.role}`,
+  headline: <>Building high quality and convenience mobile app</>,
   featured: {
     display: true,
     title: (
-      <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
-        <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+      <Row horizontal="center" vertical="center">
+        {/* <strong className="ml-4">Once UI</strong>{" "} */}
+        {/* <Line background="brand-alpha-strong" vert height="20" /> */}
+        <Text onBackground="brand-medium">
+          {"Featured work"}
         </Text>
       </Row>
     ),
@@ -76,8 +76,8 @@ const home: Home = {
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      I'm Dika, a dedicated <Text as="span" size="xl" weight="strong">Mobile Engineer</Text>, where I had involved <br /> many various projects and clients.
+    </>
   ),
 };
 
@@ -102,9 +102,8 @@ const about: About = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Experienced in developing a wide range of mobile applications, including e-commerce platforms, insurance apps, hotel booking apps, audio/video streaming apps, inventory management apps, and banking solutions. Specializing in building high-performance, cross-platform apps using React Native technology. 
+        <br/>Passionate about tackling challenges and advancing my career, I am dedicated to delivering top-quality mobile applications with clean, maintainable code, intuitive user interfaces, seamless user experiences, and optimized mobile app performance.
       </>
     ),
   },
@@ -113,41 +112,141 @@ const about: About = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Kodegiri",
+        companyIcon: {
+          src: "/images/company/kodegiri.png",
+          height: 5,
+          width: 5,
+          alt: ""
+        },
+        timeframe: "2021 - Present",
+        role: "Senior Mobile Engineer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Working remotely for many projects for different many clients such as myGarda (Asuransi Astra Buana), Kadou App (Toyota Astra Motor), Miruum App (Hotel Booking App), Bengkel Mania App, The Kayon App (Online Travel Agent), Route de l'absinthe App.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Defined technical solutions based on best practices to meet client requirements and improve end-user convenience.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
+            src: "/images/projects/myGarda.png",
+            alt: "myGarda",
+            width: 4,
+            height: 3,
+          },
+          {
+            src: "/images/projects/kadou.jpg",
+            alt: "kadou",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/thekayon.jpeg",
+            alt: "the kayon",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/miruum.png",
+            alt: "miruum",
+            width: 3,
+            height: 3,
+          },
+          {
+            src: "/images/projects/routedelabsinthe.png",
+            alt: "routedelabsinthe",
+            width: 3,
+            height: 3,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Midas Daya Teknologi",
+        companyIcon: {
+          src: "/images/company/midas.png",
+          height: 5,
+          width: 5,
+          alt: ""
+        },
+        timeframe: "2023 - 2025",
+        role: "Senior Mobile Engineer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Selected as the first Indonesia-based developer for Bank Saqu’s mobile application, collaborating within a multinational team. Served as a lead pilot user to evaluate and determine technical solutions during the project's foundational phase.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Contributed to the Community of Practice to establish design system standards, resulting in a 30% increase in development efficiency.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/saqu.jpeg",
+            alt: "maxstream",
+            width: 3,
+            height: 3,
+          },
+        ],
+      },
+      {
+        company: "Halalfresh Indonesia",
+        companyIcon: {
+          src: "/images/company/halalfresh.jpeg",
+          height: 3,
+          width: 5,
+          alt: ""
+        },
+        timeframe: "2020 - 2023",
+        role: "Mobile App Developer",
+        achievements: [
+          <>
+            Build new Mobile Applications both iOS and Android from scratch using cross platform technology React Native. This is e-commerce platforms Halalfresh App that selling daily groceries and deliver it to the customer.
+          </>,
+          <>
+            Founding developer responsible for architecting and building the MVP from initial concept to a production-ready launch.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Suitmedia Kreasi Indonesia",
+        companyIcon: {
+          src: "/images/company/suitmedia.png",
+          height: 5,
+          width: 5,
+          alt: ""
+        },
+        timeframe: "Feb 2022 - Jul 2022",
+        role: "React Native Developer",
+        achievements: [
+          <>
+            Contributed to the development of Telkomsel’s Maxstream, collaborating within a large-scale multinational environment. This role marked my professional debut in a global team, working alongside developers from Singapore, China, Taiwan, Australia, India, and Pakistan.
+          </>,
+        ],
+        images: [
+          {
+            src: "/images/projects/maxstream.webp",
+            alt: "maxstream",
+            width: 3,
+            height: 3,
+          },
+
+        ],
+      },
+      {
+        company: "Integrasi Logistik Cipta Solusi",
+        companyIcon: {
+          src: "/images/company/ilcs.webp",
+          height: 5,
+          width: 5,
+          alt: ""
+        },
+        timeframe: "2019 - 2020",
+        role: "Mobile App Developer",
+        achievements: [
+          <>
+            Launched my professional career by developing a Vessel Management System (VMS) mobile application for Pelindo II, utilizing Cordova hybrid app technology.
           </>,
         ],
         images: [],
@@ -159,13 +258,10 @@ const about: About = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Nusa Mandiri University",
+        description: <>Studied Information System.</>,
       },
-      {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
-      },
+
     ],
   },
   technical: {
@@ -173,7 +269,7 @@ const about: About = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
+        title: "React Native",
         description: (
           <>Able to prototype in Figma with Once UI with unnatural speed.</>
         ),
@@ -200,7 +296,7 @@ const about: About = {
         ],
       },
       {
-        title: "Next.js",
+        title: "React",
         description: (
           <>Building next gen apps with Next.js + Once UI + Supabase.</>
         ),
@@ -210,7 +306,7 @@ const about: About = {
             icon: "javascript",
           },
           {
-            name: "Next.js",
+            name: "React.js",
             icon: "nextjs",
           },
           {

@@ -146,6 +146,17 @@ export interface About extends BasePageConfig {
     experiences: Array<{
       /** Company name */
       company: string;
+      /** Company icon */
+      companyIcon: {
+        /** Image source path */
+        src: string;
+        /** Image alt text */
+        alt: string;
+        /** Image width ratio */
+        width: number;
+        /** Image height ratio */
+        height: number;
+      };
       /** Timeframe of employment */
       timeframe: string;
       /** Role or job title */
@@ -215,13 +226,13 @@ export interface About extends BasePageConfig {
  * Blog page configuration.
  * @description Configuration for the Blog page, including metadata and navigation label.
  */
-export interface Blog extends BasePageConfig {}
+export interface Blog extends BasePageConfig { }
 
 /**
  * Work/projects page configuration.
  * @description Configuration for the Work/Projects page, including metadata and navigation label.
  */
-export interface Work extends BasePageConfig {}
+export interface Work extends BasePageConfig { }
 
 /**
  * Gallery page configuration.
